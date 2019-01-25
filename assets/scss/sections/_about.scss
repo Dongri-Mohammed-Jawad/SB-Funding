@@ -1,0 +1,131 @@
+/**
+ * About
+ */
+
+.about {
+
+    &-content {
+        margin-top: -7px;
+        padding-right: 30px;
+
+        h2 {
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        h6 {
+            font-size: 18px;
+            font-weight: 400;
+            margin-top: 20px;
+        }
+
+        p {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        ul{
+            margin-bottom: -8px;
+        }
+
+        .tm-button {
+            margin-top: 35px;
+        }
+    }
+
+    &-image {
+        position: relative;
+        padding: 0 40px;
+
+        img{
+            width: 100%;
+        }
+
+        .tm-videobutton {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &-image2 {
+        margin-left: -157px;
+    }
+
+    @media #{$layout-laptop} {
+        &-image2 {
+            margin-left: 0;
+        }
+    }
+
+    @media #{$layout-notebook} {
+        &-image {
+            padding: 0;
+        }
+
+        &-image2 {
+            margin-left: 0;
+        }
+
+        &-content {
+            padding-right: 0;
+
+            h2{
+                font-size: 38px;
+            }
+        }
+    }
+
+    @media #{$layout-tablet} {
+        &-image {
+            padding: 0;
+            padding-bottom: 40px;
+        }
+
+        &-image2 {
+            margin-left: 0;
+            margin-bottom: 50px;
+        }
+
+        &-content {
+            padding-right: 0;
+
+            h2 {
+                font-size: 36px;
+                line-height: 46px;
+            }
+        }
+    }
+
+    @media #{$layout-mobile-lg} {
+        &-image {
+            padding: 0;
+            padding-bottom: 40px;
+        }
+
+        &-image2 {
+            margin-left: 0;
+            margin-bottom: 40px;
+        }
+
+        &-content {
+            padding-right: 0;
+
+            h2 {
+                font-size: 32px;
+                line-height: 42px;
+            }
+
+            h6 {
+                font-size: 16px;
+            }
+        }
+    }
+
+    @media #{$layout-mobile-sm}{
+        &-image2 {
+            margin-bottom: 30px;
+        }
+    }
+}
